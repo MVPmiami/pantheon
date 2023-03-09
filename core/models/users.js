@@ -19,10 +19,6 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    testData: {
-      type: Object,
-      required: true,
-    },
   },
   { timestamps: true },
 )
