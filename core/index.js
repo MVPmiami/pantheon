@@ -1,6 +1,7 @@
 import express from 'express'
 import * as dotenv from 'dotenv'
 import Repository from '../core/repository/index.js'
+import UseCases from './useCases/index.js'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
@@ -15,13 +16,14 @@ async function main() {
   app.listen(process.env.PORT, () => {
     console.log(`Server is running at http://localhost:${process.env.PORT}`)
   })
-  let user = {
+  /* let user = {
     id: '1111',
     login: 'login',
     password: 'password',
     email: 'email@tut.by',
   }
-  //await Repository.users.deleteUser('email@tut.by')
+  const result = await UseCases.AuthService.signUp(user)
+  console.log(result)*/
 }
 
 main()
