@@ -1,6 +1,6 @@
 import express from 'express'
 import * as dotenv from 'dotenv'
-import Repository from '../core/repository/index.js'
+import Repository from './repository/index.js'
 import UseCases from './useCases/index.js'
 import path from 'path'
 import { fileURLToPath } from 'url'
