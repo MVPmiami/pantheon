@@ -16,11 +16,11 @@ async function main() {
   app.listen(process.env.PORT, () => {
     console.log(`Server is running at http://localhost:${process.env.PORT}`)
   })
-  /* let user = {
-    id: '1111',
-    login: 'login',
-    password: 'password',
-    email: 'email@tut.by',
+  /*let user = {
+    id: '2222',
+    login: 'login2',
+    password: 'password2',
+    email: 'email2@tut.by',
   }
   const result = await UseCases.AuthService.signUp(user)
   console.log(result)*/
