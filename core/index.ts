@@ -20,7 +20,7 @@ async function main() {
     id: '2222',
     login: 'login2',
     password: 'password2',
-    email: 'email2@tut.by',
+    email: 'email22@tut.by',
   }
   //const result = await Repository.db.users.deleteUser(user.email)
   const result = await UseCases.AuthService.signUp(

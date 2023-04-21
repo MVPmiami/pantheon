@@ -9,14 +9,12 @@ class Users implements IUsersRepository {
     email: string,
   ) => {
     const result = { value: null, error: null }
-    //!так же передается еще вторым аргументом docs но из-за не использования ругается пока убрал
     const answer = await User.collection.insertOne({
       id,
       login,
       password,
       email,
     })
-    //! посмотреть что приходит и добавить проверку на ошибку
     if (!answer.acknowledged) {
       result.error =
         new Error('undefined error in db') ||
@@ -46,13 +44,6 @@ class Users implements IUsersRepository {
   deleteUser = async (email: string) => {
     const result = { value: null, error: null }
     try {
-      //! тут не делаем поиск все в юзкейсы переносим, там будет 2 вызова метода просто
-      /*const query = await User.find({ email: email })
-      if (!query.length) {
-        result.error =
-          new Error('user not found') || new Error('Undefined repository error')
-        return result
-      }*/
       await User.deleteOne({ email: email })
       result.value = true
       console.log('user was deleted')
