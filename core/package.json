@@ -2,18 +2,24 @@
   "name": "core",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "build": "npx tsc",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon dist/index.js\"",
+    "clean": "rimraf dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^5.1.0",
     "mongoose": "^7.0.0",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
   }
 }

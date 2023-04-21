@@ -1,0 +1,25 @@
+{
+    "include": ["./**/*.ts", "repository/index.ts"],
+    "exclude": ["node_modules", ".vscode"],
+    "compilerOptions": {
+      // Tells TypeScript to read JS files, as
+      // normally they are ignored as source files
+      "target":"ES2016",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "module": "NodeNext",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "allowJs": true,
+      // Generate d.ts files
+      // This compiler run should
+      // only output d.ts files
+      // Types should go into this directory.
+      // Removing this would place the .d.ts files
+      // next to the .js files
+      "outDir": "dist",
+      // go to js file when using IDE functions like
+      // "Go to Definition" in VSCode
+    }
+  }

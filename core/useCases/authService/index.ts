@@ -1,6 +1,7 @@
 import Repository from '../../repository/index.js'
+import { IAuthService } from '../layerInterface.js'
 
-class AuthService {
+class AuthService implements IAuthService {
   /*get = async (name: string, options: { width?: string, height?: string }) => {
         const result: IFuncResultModel<NodeJS.ReadableStream | null> = {
             value: null,
@@ -26,9 +27,19 @@ class AuthService {
 
         return result
     }*/
-  signUp = async (userData) => {
+  signUp = async (
+    id: string,
+    login: string,
+    password: string,
+    email: string,
+  ) => {
     const result = { value: null, error: null }
-    const { value, error } = await Repository.users.createUser(userData)
+    const { value, error } = await Repository.db.users.createUser(
+      id,
+      login,
+      password,
+      email,
+    )
     if (!value || error) {
       result.error = new Error('Error when creating a user')
       return result
