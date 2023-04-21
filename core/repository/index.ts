@@ -1,12 +1,10 @@
-import DB from '../repository/database/index.js'
-import Users from '../repository/database/users.js'
+import DB from './database/index.js'
+import IDBRepository from './database/interfaces.js'
 
 class Repository {
-  db
-  users
+  db: IDBRepository
   constructor() {
     this.db = DB
-    this.users = Users
   }
 
   connect = async () => {
