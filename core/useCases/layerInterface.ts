@@ -6,7 +6,6 @@ export default interface IUseCases {
 
 export interface IAuthService {
   signUp: (
-    id: string,
     login: string,
     password: string,
     email: string,

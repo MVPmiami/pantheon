@@ -1,13 +1,9 @@
 import Repository from '../../repository/index.js'
 import { IAuthService } from '../layerInterface.js'
+import uniqid from 'uniqid'
 
 class AuthService implements IAuthService {
-  signUp = async (
-    id: string,
-    login: string,
-    password: string,
-    email: string,
-  ) => {
+  signUp = async (login: string, password: string, email: string) => {
     const result = { value: null, error: null }
 
     const userResult = await Repository.db.users.findUser(email)
@@ -17,7 +13,7 @@ class AuthService implements IAuthService {
       return result
     }
     const { value, error } = await Repository.db.users.createUser(
-      id,
+      uniqid(email),
       login,
       password,
       email,
