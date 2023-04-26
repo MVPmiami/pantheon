@@ -1,27 +1,22 @@
 {
-  "name": "pantheon",
+  "name": "my-vue-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
     "clean": "rimraf dist"
   },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^2.0.2",
-    "@tsconfig/svelte": "^3.0.0",
-    "svelte": "^3.55.1",
-    "svelte-check": "^2.10.3",
-    "tslib": "^2.5.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.0"
-  },
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "ts-node": "^10.9.1",
-    "uuid": "^9.0.0"
+    "rimraf": "^5.0.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vue-tsc": "^1.4.2"
   }
 }
