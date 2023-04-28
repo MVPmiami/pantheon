@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import Main from './components/pages/Main.vue';
 </script>
 
 <template>
-  <div>
-  </div>
+    <Main></Main>
 </template>
 
 <style lang="scss" module>
+
 </style>
