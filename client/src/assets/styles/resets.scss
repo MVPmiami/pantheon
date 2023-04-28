@@ -7,4 +7,14 @@ body {
   height: 100vh;
   overflow-x: hidden;
   display: flex;
+  font-size: 10px;
+  background-image: url("../../assets/images/background.png");
+  background-size: cover;
+  background-position:fixed;
+  background-repeat: no-repeat;
+}
+.container{
+  width: 130rem;
+  margin: 0 auto;
+  overflow: hidden;
 }
