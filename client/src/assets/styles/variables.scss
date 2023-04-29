@@ -23,7 +23,7 @@ $red: #d93905;
 @mixin colorBtnHover($property) {
   color: $property;
   opacity: 1;
-  box-shadow: 0 0 10px 0 $property inset, 0 0 10px 4px $property;
+  box-shadow: 0 0px 15px 1px $property inset, 0 0 1px 0px $property;
 }
 
 @mixin primeBtn($width,$height) {
