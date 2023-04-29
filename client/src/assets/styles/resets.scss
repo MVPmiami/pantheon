@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   display: flex;
   font-size: 10px;
-  background-image: url("../../assets/images/background.png");
+  background-image: url("../../assets/images/background1920.png");
   background-size: cover;
   background-position:fixed;
   background-repeat: no-repeat;
@@ -17,4 +17,23 @@ body {
   width: 130rem;
   margin: 0 auto;
   overflow: hidden;
+}
+
+@media(max-width:1380px){
+  body{
+    background-image: url("../../assets/images/background1300.png");
+  }
+  .container{
+    width: 90rem;
+  }
+}
+@media(max-width:980px){
+  .container{
+    width: 60rem;
+  }
+}
+@media(max-width:680px){
+  .container{
+    width: 31rem;
+  }
 }
