@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import TestButton from '../atoms/TestButton.vue';
+import Button from '../atoms/Button.vue';
 </script>
 
 <template>
     <header :class="[$style.header, $style.container]">
         <div :class="$style.logo"></div>
-        <TestButton :class="[$style.btn, $style.login]">login</TestButton>
-        <TestButton :class="[$style.btn, $style.createBtn]">create account</TestButton>
-        <TestButton :class="[$style.btn, $style.playBtn]">play</TestButton>
+        <Button :class="[$style.btn, $style.login]">login</Button>
+        <Button :class="[$style.btn, $style.createBtn]">create account</Button>
+        <Button :class="[$style.btn, $style.playBtn]">play</Button>
     </header>
 </template>
 
