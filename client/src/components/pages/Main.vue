@@ -4,13 +4,13 @@ import Header from './../organisms/Header.vue'
 
 <template>
     <div :class="$style.mainPage">
-        <Header/>
+        <Header />
     </div>
 </template>
 
 <style lang="scss" module>
-    .mainPage{
-        width: 100vw;
-        height: 100vh;
-    }
+.mainPage {
+    width: 100vw;
+    height: 100vh;
+}
 </style>

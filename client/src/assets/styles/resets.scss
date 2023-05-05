@@ -18,6 +18,9 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+:root{
+  --x: 45deg;
+}
 
 @media(max-width:1380px){
   body{

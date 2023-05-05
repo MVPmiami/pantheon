@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import Button from '../atoms/Button.vue';
+import TestButton from '../atoms/TestButton.vue';
 </script>
 
 <template>
     <header :class="[$style.header, $style.container]">
         <div :class="$style.logo"></div>
-        <Button :class="[$style.btn, $style.loginBtn]" color="grey">Login</Button>
-        <Button :class="[$style.btn, $style.createBtn]" color="orange">Create account</Button>
-        <Button :class="[$style.btn, $style.playBtn]" color="red">Play</Button>
+        <TestButton :class="[$style.btn, $style.login]">login</TestButton>
+        <TestButton :class="[$style.btn, $style.createBtn]">create account</TestButton>
+        <TestButton :class="[$style.btn, $style.playBtn]">play</TestButton>
     </header>
 </template>
 
 <style lang="scss" module>
 .header {
-    height: 18rem;
+    height: 22rem;
     display: flex;
     position: relative;
 
@@ -29,15 +29,17 @@ import Button from '../atoms/Button.vue';
 
     .btn {
         position: absolute;
-        bottom: 0rem;
+        bottom: 2rem;
+        left: 2rem;
     }
 
     .createBtn {
-        left: 15.5rem
+        left: 18.5rem;
+        width: 20rem;
     }
 
     .playBtn {
-        right: 0rem;
+        right: -109rem;
         padding: 1.5rem 6rem;
     }
 }
@@ -47,35 +49,65 @@ import Button from '../atoms/Button.vue';
         .logo {
             left: 12px;
         }
+
+        .playBtn {
+            right: -70rem;
+        }
     }
 }
 
 @media(max-width:980px) {
     .header {
+        .btn {
+            left: 1rem;
+        }
+
         .createBtn {
-            left: 12.5rem
+            left: 18.5rem
         }
 
         .logo {
             left: 0px;
+        }
+
+        .playBtn {
+            right: -40rem;
         }
     }
 }
 
 @media(max-width:680px) {
     .header {
+        height: 26rem;
+
         .btn {
             position: absolute;
             bottom: 0rem;
+            font-size: 1.4rem;
+            width: 12rem;
+
+            & span {
+                font-size: 1.2rem;
+            }
+        }
+
+        .login {
+            left: 1rem;
+            bottom: 10rem;
         }
 
         .createBtn {
-            left: 0rem;
-            bottom: 4.5rem;
+            left: 1rem;
+            bottom: 3.5rem;
+
+            & span {
+                text-align: center;
+            }
         }
 
         .playBtn {
-            right: 0rem;
+            right: -16rem;
+            bottom: 10rem;
             padding: 1.5rem 6rem;
         }
 
