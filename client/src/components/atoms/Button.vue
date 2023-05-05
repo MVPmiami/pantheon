@@ -5,7 +5,7 @@ const btn: Ref<null | any | HTMLElement> = ref(null)
 
 let animation: (event: MouseEvent) => void = (event) => {
   let rect = btn.value.getBoundingClientRect()
-  let x = event.clientX * 3 - rect.left
+  let x = event.clientX - rect.left
   btn.value.style.setProperty('--x', x + 'deg')
 };
 
@@ -57,7 +57,7 @@ let animation: (event: MouseEvent) => void = (event) => {
     font-size: 1.6rem;
     background: #040d37a6;
     overflow: hidden;
-
+    border: 0.1rem solid $orange;
     &:hover {
       border: 0.1rem solid $dark;
       border-radius: 0.3rem;
