@@ -53,11 +53,13 @@ let animation: (event: MouseEvent) => void = (event) => {
     text-transform: uppercase;
     color: $light;
     letter-spacing: 0.2rem;
-    font-family: $font-family;
+    font-family: $font-family-ru;
     font-size: 1.6rem;
+    font-weight: 400;
     background: #040d37a6;
     overflow: hidden;
     border: 0.1rem solid $orange;
+
     &:hover {
       border: 0.1rem solid $dark;
       border-radius: 0.3rem;

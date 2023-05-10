@@ -97,6 +97,7 @@ const languageStatus = computed(() => store.getters.languageStatus)
             bottom: 0rem;
             font-size: 1.4rem;
             width: 12rem;
+            height: 5rem;
 
             & span {
                 font-size: 1.2rem;

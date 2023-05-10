@@ -1,14 +1,22 @@
 <script setup lang="ts">
 import { useStore } from '../../../node_modules/vuex'
-
+import { ref, Ref } from 'vue'
 const store = useStore()
-const changeLanguage = () => store.dispatch('changeLanguageStatus')
+const checkbox: Ref<null | any | HTMLElement> = ref(null)
+
+const changeLanguage = () => {
+    checkbox.value.disabled = true
+    store.dispatch('changeLanguageStatus')
+    setTimeout(() => {
+        checkbox.value.disabled = false
+    }, 500)
+}
 </script>
 
 <template>
     <div :class="$style.toggleButtonCover" @click="changeLanguage">
         <div :class="[$style.button, $style.r]" :id="$style.button1">
-            <input type="checkbox" :class="$style.checkbox" />
+            <input type="checkbox" :class="$style.checkbox" ref="checkbox" />
             <div :class="$style.knobs"></div>
             <div :class="$style.layer"></div>
         </div>
@@ -19,8 +27,8 @@ const changeLanguage = () => store.dispatch('changeLanguageStatus')
 .toggleButtonCover {
     display: flex;
     position: absolute;
-    width: 100px;
-    height: 40px;
+    width: 10rem;
+    height: 4rem;
     box-sizing: border-box;
     top: 2rem;
     right: 4.5rem;
@@ -39,19 +47,19 @@ const changeLanguage = () => store.dispatch('changeLanguageStatus')
 .button {
     position: relative;
     top: 50%;
-    width: 74px;
-    height: 36px;
-    margin: -20px auto 0 auto;
+    width: 7.4rem;
+    height: 3.6rem;
+    margin: -2rem auto 0 auto;
     overflow: hidden;
 }
 
 .button.r,
 .button.r .layer {
-    border-radius: 100px;
+    border-radius: 10rem;
 }
 
 .button.b2 {
-    border-radius: 2px;
+    border-radius: 0.2rem;
 }
 
 .checkbox {
@@ -80,17 +88,17 @@ const changeLanguage = () => store.dispatch('changeLanguageStatus')
 #button1 .knobs:before {
     content: "EN";
     position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 20px;
-    height: 10px;
+    top: 0.4rem;
+    left: 0.4rem;
+    width: 2rem;
+    height: 1rem;
     font-family: $font-family;
     color: $light;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     line-height: 1;
-    padding: 9px 4px;
+    padding: 0.9rem 0.4rem;
     background-color: $orange;
     border-radius: 50%;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
@@ -98,7 +106,7 @@ const changeLanguage = () => store.dispatch('changeLanguageStatus')
 
 #button1 .checkbox:checked+.knobs:before {
     content: "RU";
-    left: 42px;
+    left: 4.2rem;
     background-color: $red;
     font-family: $font-family;
 }
