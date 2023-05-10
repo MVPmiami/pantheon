@@ -15,7 +15,7 @@
     "sass-loader": "^13.2.2",
     "uuid": "^9.0.0",
     "vue": "^3.2.47",
-    "vuex": "^4.1.0"
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

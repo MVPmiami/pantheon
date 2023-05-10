@@ -1,0 +1,16 @@
+{
+    "EN":{
+        "buttons":{
+            "login":"login",
+            "createAccount": "create account",
+            "play": "play"
+        }
+    },
+    "RU":{
+        "buttons":{
+            "login":"вход",
+            "createAccount": "создать аккаунт",
+            "play": "играть"
+        }
+    }
+}

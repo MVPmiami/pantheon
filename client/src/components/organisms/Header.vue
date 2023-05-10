@@ -1,13 +1,25 @@
 <script setup lang="ts">
+import { computed } from 'vue';
+import { useStore } from '../../../node_modules/vuex';
 import Button from '../atoms/Button.vue';
+import Language from '../molecules/Language.vue';
+import languages from '../../assets/lang/languages.json';
+
+
+const store = useStore()
+const languageStatus = computed(() => store.getters.languageStatus)
 </script>
 
 <template>
     <header :class="[$style.header, $style.container]">
+        <Language></Language>
         <div :class="$style.logo"></div>
-        <Button :class="[$style.btn, $style.login]">login</Button>
-        <Button :class="[$style.btn, $style.createBtn]">create account</Button>
-        <Button :class="[$style.btn, $style.playBtn]">play</Button>
+        <Button :class="[$style.btn, $style.login]">{{ languageStatus === "EN" ? languages.EN.buttons.login
+            : languages.RU.buttons.login }}</Button>
+        <Button :class="[$style.btn, $style.createBtn]">{{ languageStatus === "EN" ? languages.EN.buttons.createAccount :
+            languages.RU.buttons.createAccount }}</Button>
+        <Button :class="[$style.btn, $style.playBtn]">{{ languageStatus === "EN" ? languages.EN.buttons.play :
+            languages.RU.buttons.play }}</Button>
     </header>
 </template>
 
