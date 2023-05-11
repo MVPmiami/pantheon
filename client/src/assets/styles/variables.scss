@@ -12,15 +12,6 @@ $dark: #040a29;
 $light: #f0f8ff;
 $light-red:#ffffff13;
 
-/*
-@mixin fontHeader($property) {
-  font-family: $font-header;
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: $property;
-  line-height: normal;
-}
-}*/
 @mixin colorBtn($property) {
   border: 2px solid $property;
   color: #fff;
