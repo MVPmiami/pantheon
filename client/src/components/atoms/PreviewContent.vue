@@ -202,7 +202,7 @@ const languageStatus = computed(() => store.getters.languageStatus)
         font-size: 1.8rem;
 
         h2 {
-            font-size: 3rem;
+            font-size: 2.6rem;
         }
 
         p {
