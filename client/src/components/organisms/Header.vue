@@ -41,7 +41,7 @@ const languageStatus = computed(() => store.getters.languageStatus)
 
     .btn {
         position: absolute;
-        bottom: 2rem;
+        bottom: 0.2rem;
         left: 2rem;
     }
 

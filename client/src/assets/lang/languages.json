@@ -4,6 +4,18 @@
             "login":"login",
             "createAccount": "create account",
             "play": "play"
+        },
+        "text":{
+            "previewText": {
+                "headers":{
+                    "name": "Pantheon",
+                    "whatispantheon":"What is Pantheon?",
+                    "advanture":"Adventure awaits!"
+                },
+                "pantheon":"Welcome to Ardayn, a world of powerful magic and endless wars. The God of War, Ralkan, won the great battle against the terrible enemy, but lost his brothers and sisters in a bloody battle. The scarlet horizon portends new wars and upcoming battles, therefore Ralkan assembles the New Pantheon. Mighty mortal heroes gather in the Arena to fight for the right to stand beside the God of War as his equals. ",
+                "whatispantheon": "In Patheon, you are a powerful hero who fights other players for the right to ascend to the rank of God. Win the Arena matches using various artifacts, skills and spells. Nothing limits your imagination. Do you want to become a mighty centaur with a spear, who violently bursts into the thick of battle? Or perhaps a cunning gnome sorcerer who corrupt its enemies? Or maybe you've always enjoyed being a human paladin who crushes down enemies with a two-handed sword and heals himself with the power of the Light? It's up to you to decide!",
+                "advanture": "During the battles, you will discover many different artifacts, abilities and spells. Choose for yourself those you like - and enter the Arena, where other players are waiting for you. The rating of the players is displayed in the Scoreboard, and at the end of the season the best of the best will ascend to the status of God, where they will receive titles, gold and prestige."
+            }
         }
     },
     "RU":{
@@ -11,6 +23,18 @@
             "login":"вход",
             "createAccount": "создать аккаунт",
             "play": "играть"
+        },
+        "text":{
+            "previewText": {
+                "headers":{
+                    "name": "Пантеон",
+                    "whatispantheon":"Что такое Пантеон?",
+                    "advanture":"Приключения ждут!"
+                },
+                "pantheon":"Добро пожаловать в Ардейн, мир могущественной магии и бесконечных войн. Бог Войны, Ралкан, одержал победу в великой битве со страшным врагом, но в кровавой схватке потерял своих братьев и сестёр. Алый горизонт предвещает новые войны и грядущие битвы, поэтому Ралкан собирает Новый Пантеон. Могучие смертные герои собираются на Арене, чтобы сразится за право стоять рядом с Богом Войны как равные ему.",
+                "whatispantheon": "В Пантеоне вы могучий герой, который сражается с другими игроками за право вознестись в ранг Бога. Побеждайте на Арене, используя всевозможные артефакты, умения и заклинания. Ничто не ограничивает вашу фантазию. Хотите стать могучим кентавром с копьём, который яростно врывается в гущу битвы? Или, возможно, хитрым гномом-колдуном, который накладывает порчу на врагов? А может быть, вам всегда нравилось быть человеком-паладином, который сокрушает врагов двуручным мечом и исцеляет себя силой Света? Решать только вам!",
+                "advanture": "В ходе сражений вы откроете для себя множество различных артефактов, способностей и заклинаний. Подбирайте для себя те, что вам нравятся - и отправляйтесь на Арену, где вас ждут другие игроки. Рейтинг игроков отображается в Таблице, и в конце сезона лучшие из лучших вознесутся в статус Бога, где получат титулы, золото и престиж."
+            }
         }
     }
 }

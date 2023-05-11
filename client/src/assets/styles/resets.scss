@@ -13,6 +13,18 @@ body {
   background-size: cover;
   background-position:fixed;
   background-repeat: no-repeat;
+  scrollbar-color: #fc931d #7c8a9e; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; 
+}
+::-webkit-scrollbar {
+  width: 0.8rem; /* ширина для вертикального скролла */
+  height: 0.8rem; /* высота для горизонтального скролла */
+  background-color: #7c8a9e;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #fc931d;
 }
 .container{
   width: 130rem;
