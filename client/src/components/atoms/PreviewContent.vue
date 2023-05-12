@@ -48,12 +48,11 @@ const languageStatus = computed(() => store.getters.languageStatus)
     align-items: center;
     flex-direction: column;
     color: $light;
-    background-color: #0b11246b;
+    background-color: $light-blue;
     text-align: center;
     font-size: 2.4rem;
     font-family: $font-family-ru;
     width: 126rem;
-    //padding: 0rem 4rem;
 
     h2 {
         color: $orange;
